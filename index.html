@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | LAGUERRE Mike-Scott</title>
-    <link rel="short-cut icon" href="./assets/img/letter-m-svgrepo-com.svg">
+    <title>Mon Portfolio | LAGUERRE Mike-Scott-Lawens</title>
+    <!-- <link rel="short-cut icon" href="./assets/img/letter-m-svgrepo-com.svg"> -->
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+        <text y=%22.9em%22 font-size=%2290%22>M</text>
+    </svg>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Saira:wght@300;600&display=swap">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=folder_open" />
+    <link rel="stylesheet" href="./assets/style.css">    
 </head>
 <body>
 
@@ -17,7 +25,7 @@
             <div class="dropdown-content">
                 <a href="#infos"><p>Informations complémentaires</p></a>
                 <a href="#parcours"><p>Parcours</p></a>
-                <a href="#competences"><p>Compétences</p></a>
+                <a href="#competences"><p>Stack technique</p></a>
             </div>
         </div>
         <a href="#rubriques"><p>Rubriques</p></a>
@@ -35,6 +43,7 @@
     </div>
 
     <div class="hamburger-menu" id="hamburger">
+        <!-- <i class="bi bi-list" style="font-size: 30px; top: 0;"></i> -->
         <span></span>
         <span></span>
         <span></span>
@@ -61,7 +70,7 @@
                     </li>
                     <li>
                         <a href="#competences">
-                            <p>Compétences</p>
+                            <p>Stack technique</p>
                         </a>
                     </li>
                 </div>
@@ -83,7 +92,7 @@
         <header id="hero">
             <div class="welcome-to">
                 <h3>PORTFOLIO DE</h3>
-                <h1>LAGUERRE <br>Mike-Scott</h1>
+                <h1>LAGUERRE <br>Mike-Scott-Lawens</h1>
             </div>
             <!-- <div class="nova">...</div> -->
             <!-- <div class="btn-container">
@@ -93,7 +102,6 @@
         </header>
 
         <section class="description" id="description">
-            <div class="separator"></div>
             <h2>À PROPOS</h2>
             <p>Etant passionné par le développement, j'aime
                 apprendre et améliorer mes connaissances dans le domaine du
@@ -108,7 +116,8 @@
                 <table class="info-table">
                     <tr>
                         <th>
-                            <img src="./assets/img/distance_24dp_111_FILL0_wght400_GRAD0_opsz24.svg" style="width: 50px; height: 50px;"  alt="Localisation">
+                            <i class="bi bi-pin-map-fill" style="width: auto; height: auto;"></i>
+                            <!-- <img src="./assets/img/distance_24dp_111_FILL0_wght400_GRAD0_opsz24.svg" style="width: 50px; height: 50px;"  alt="Localisation"> -->
                             Localisation
                         </th>
                         <td>Montereau-Fault-Yonne | (77)</td>
@@ -116,27 +125,27 @@
 
                     <tr>
                         <th>
-                            <img src="./assets/img/language-svgrepo-com.svg" style="width: 50px; height: 50px;" alt="">
+                            <i class="bi bi-translate"></i>
+                            <!-- <img src="./assets/img/language-svgrepo-com.svg" style="width: 50px; height: 50px;" alt=""> -->
                             Langues
                         </th>
-                        <td>Français | Natif, Anglais | B2 - Intermédiaire</td>
+                        <td>Français | Anglais | B2 - Intermédiaire</td>
                     </tr>
 
                     <tr>
                         <th>
-                            <img src="./assets/img/favorite_24dp_111_FILL0_wght400_GRAD0_opsz24.svg" style="width: 50px; height: 50px;" alt="Hobbies">
+                            <i class="bi bi-heart"></i>
+                            <!-- <img src="./assets/img/favorite_24dp_111_FILL0_wght400_GRAD0_opsz24.svg" style="width: 50px; height: 50px;" alt="Hobbies"> -->
                             Hobbies
                         </th>
                         <td>Informatique, Violon, Handball</td>
                     </tr>
                 </table>
             </div>
-        <!-- </section> -->
     
 
         
 
-        <!-- <section id="parcours" class="content-section"> -->
             <div class="separator" id="parcours"></div>
             <h2>MON PARCOURS</h2>
             <div class="timeline-modern">
@@ -148,62 +157,155 @@
                     <div class="timeline-node">
                         <div class="node-dot"></div>
                         <div class="node-card">
-                            <div class="node-year">2023</div>
-                            <h4>Début du BTS SIO</h4>
-                            <p>Inscription au BTS Solutions Informatiques Organisationnelles</p>
-                            <span class="node-badge">Année 1</span>
+                            <div class="node-year">2021 - 2023</div>
+                            <h4>Science des Techniques du Design et des Arts Appliquées | STD2A</h4>
+                            <p>Apprentissage des différents courant du design, et maîtrise des techniques artistiques.</p>
+                            <!-- <span class="node-badge">En cours</span> -->
                         </div>
                     </div>
 
                     <div class="timeline-node">
                         <div class="node-dot"></div>
                         <div class="node-card">
-                            <div class="node-year">2024</div>
-                            <h4>Alternance en Entreprise</h4>
-                            <p>Début de l'alternance - Développement de solutions web et maintenance</p>
-                            <span class="node-badge">En cours</span>
+                            <div class="node-year">2023 - 2025</div>
+                            <h4>Licence | Langues Etrangères Appliquées (LEA), première année</h4>
+                            <p>Apprentissage de l'anglais et de l'allemand</p>
+                            <!-- <span class="node-badge">En cours</span> -->
                         </div>
                     </div>
 
                     <div class="timeline-node">
                         <div class="node-dot"></div>
                         <div class="node-card">
-                            <div class="node-year">2025</div>
-                            <h4>Projets et Veille</h4>
-                            <p>Réalisation des projets U5 et U6, suivi de la veille technologique</p>
-                            <span class="node-badge">En cours</span>
-                        </div>
-                    </div>
-
-                    <div class="timeline-node">
-                        <div class="node-dot"></div>
-                        <div class="node-card">
-                            <div class="node-year">2026</div>
-                            <h4>Fin du BTS</h4>
-                            <p>Examen final et obtention du diplôme BTS SIO</p>
-                            <span class="node-badge">À venir</span>
+                            <div class="node-year">2025 - 2027</div>
+                            <h4>BTS SIO | Solutions Logiciels et Applications Métiers (SLAM)</h4>
+                            <p>École supérieure spécialisée dans les métiers du numérique. <br>Formation alliant théorie technique et projets concrets dans un environnement professionnalisant.</p>
+                            <span class="node-badge">En cours <span class="loader"></span></span>
                         </div>
                     </div>
                 </div>
             </div>
     
 
-        <!-- <section id="competences" class="content-section"> -->
             <div class="separator" id="competences"></div>
-            <h2>COMPÉTENCES</h2>
+            <h2>STACK TECHNIQUE</h2>
             <div class="product-grid">
-                <div class="product-card"><h4>Frontend</h4>
-                    <img src="./assets/img/html5-svgrepo-com.svg" style="height:50px; width: 50px;" alt="HTML5">
-                    <img src="./assets/img/css-3.png" style="width: 50px; height: 50px;" alt="CSS3">
-                    <img src="./assets/img/js.png" style="height: 50px; width: 50px;" alt="JavaScript">
+                <div class="product-card">
+                    <h4>Frontend / Backend</h4>
+                    <div class="skills-wrapper">
+                        
+                        <div class="skill-item">
+                            <i class="devicon-html5-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="skills-wrapper">
+                        <div class="skill-item">
+                            <i class="devicon-css3-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-php-plain colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-python-plain colored" style="font-size: 50px;"></i>
+
+                        </div>
+                    </div>
+          
+                    <!-- <img src="./assets/img/html5-svgrepo-com.svg" style="height:50px; width: 50px;" alt="HTML5"> -->
+          
+                    <!-- <img src="./assets/img/css-3.png" style="width: 50px; height: 50px;" alt="CSS3"> -->
+
+                    <div class="skills-wrapper">
+                        <div class="skill-item">
+                            <i class="devicon-javascript-plain colored" style="font-size: 50px;"></i>
+
+                        </div>
+                    </div>
+          
+                    <!-- <img src="./assets/img/js.png" style="height: 50px; width: 50px;" alt="JavaScript"> -->
                 </div>
-                <div class="product-card"><h4>Backend</h4>
-                    <img src="./assets/img/php.png" style="height: 50px; width: 50px;" alt="PHP">
-                    <img src="./assets/img/python-svgrepo-com.svg" style="height: 50px; width: 50px;" alt="Python">
+                <div class="product-card"><h4>Outils / Machine virtuelle</h4>
+                    <div class="skills-wrapper">
+                        <div class="skill-item">
+                            <i class="devicon-vscode-plain colored" style="font-size: 50px;"></i>
+          
+
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-figma-plain colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-debian-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="./assets/img/mobaxterm.png" alt="Mobaxterm" style="height: 50px; width: 50px;">
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-git-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="./assets/img/vmware-workstation-pro.svg" alt="vmware-workstation-pro">
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="./assets/img/kali-linux.svg" alt="Kali-Linux">
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-mysql-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+                    </div>
+                        <!-- <i class="si si-vmware" style="font-size: 50px; "></i> -->
+          
+                        <!-- <img src="./assets/img/visual-studio-code-svgrepo-com.svg" style="height: 50px; width: 50px;" alt="VS Code"> -->
                 </div>
-                <div class="product-card"><h4>Outils</h4>
-                    <div class="product-card1">
-                        <img src="./assets/img/visual-studio-code-svgrepo-com.svg" style="height: 50px; width: 50px;" alt="VS Code">
+                <div class="product-card">
+                    <h4>Framework / Serveurs</h4>
+                    <div class="skills-wrapper">
+                        <div class="skill-item">
+                            <i class="devicon-nodejs-plain-wordmark colored" style="font-size: 50px;"></i>
+                                  </div>
+
+                        <div class="skill-item">
+                            <img src="./assets/img/reactjs.svg" alt="Reactjs">
+                        </div>
+
+                        <!-- <div class="skill-item">
+                            <i class="devicon-git-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div> -->
+
+                        <div class="skill-item">
+                            <i class="devicon-symfony-original-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-apache-plain-wordmark colored" style="font-size: 50px;"></i>
+
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="./assets/img/windows-10.svg" alt="Windows Server">
+                        </div>
+
+                        <div class="skill-item">
+                            <img src="./assets/img/linux.svg" alt="Linux">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,34 +316,34 @@
             <h2>RUBRIQUES BTS SIO</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <h4>Mon école</h4>
+                    <h4>Mon école <i class="bi bi-mortarboard-fill"></i></h4>
                     <p>Paris Ynov Campus</p>
                     <a href="./ecole.html"><button class="lm">Voir le dossier</button></a>
                 </div>
 
                 <div class="product-card">
-                    <h4>Mon entreprise</h4>
+                    <h4>Mon entreprise <i class="bi bi-buildings-fill"></i></h4>
                     <p>[Nom de l'entreprise]</p>
                     <a href="./entreprise.html"><button class="lm">Voir le dossier</button></a>
                 </div>
 
                 <div class="product-card">
-                    <h4>Formation BTS</h4>
+                    <h4>Formation BTS <i class="bi bi-book"></i></h4>
                     <p>BTS SIO : Présentation des deux spécialités</p>
                     <a href="./sio.html"><button class="lm">Voir le dossier</button></a>
                 </div>
                 <div class="product-card">
-                    <h4>Mission U5</h4>
+                    <h4>Missions U5 <span class="material-symbols-outlined">folder_open</span></h4>
                     <p>Patrimoine informatique et maintenance.</p>
                     <a href="./u5.html"><button class="lm">Voir le dossier</button></a>
                 </div>
                 <div class="product-card">
-                    <h4>Projet U6</h4>
+                    <h4>Projets U6 <span class="material-symbols-outlined">folder_open</span></h4>
                     <p>Cyberadministration et développement.</p>
                     <a href="./u6.html"><button class="lm">Voir le dossier</button></a>
                 </div>
                 <div class="product-card">
-                    <h4>Veille Techno</h4>
+                    <h4>Veille Techno <i class="bi bi-search"></i></h4>
                     <p>Sujet : L'intelligence artificielle en 2026.</p>
                     <a href="./veille.html"><button class="lm">Lire la veille</button></a>
                 </div>
@@ -256,16 +358,40 @@
                 </div>
                 <form id="contact-form">
                     <div class="form-row">
-                        <div class="form-group"><input type="text" id="name" placeholder="Nom" required></div>
-                        <div class="form-group"><input type="email" id="email" placeholder="Email" required></div>
+                        <div class="form-group">
+                            <label for="name">Nom <span class="required">*</span></label>
+                            <input type="text" id="name" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="text">Motif <span class="required">*</span></label>
+                            <input type="text" id="text" placeholder="Motif" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
                     </div>
                     <div class="form-group">
+                        <label for="message">Votre message <span class="required">*</span></label>
                         <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
                     </div>
-                    <button type="submit" class="lm">ENVOYER</button>
+                    <button type="submit" class="lm">ENVOYER   <i class="bi bi-send"></i></button>
                 </form>
                 <div id="form-status"></div>
             </div>
+
+            <!-- Nouveau Bloc CV à côté -->
+            <div class="cv-container">
+                <h3>MON CV</h3>
+                <div class="separator"></div>
+
+                <p>Consultez ou téléchargez mon CV au format PDF pour en savoir plus sur mon parcours en BTS SIO.</p>
+                
+                <a href="./CV (1).pdf" target="_blank" class="lm cv-btn">
+                    <i class="bi bi-file-earmark-pdf-fill"></i> Voir mon CV
+                </a>
+            </div>
+            
         </section>
     </main>
 
@@ -276,21 +402,30 @@
             
             
             <a href="https://www.linkedin.com/in/lawens-laguerre-22453039a/">
-                <img src="./assets/img/linkedin-svgrepo-com.svg" style="width: 50px; height: 50px;" alt="LinkedIn">
+                <i class="devicon-linkedin-plain" style="font-size: 50px;"></i>
+          
+                <!-- <img src="./assets/img/linkedin-svgrepo-com.svg" style="width: 50px; height: 50px;" alt="LinkedIn"> -->
             </a>
 
-            <a href="https://github.com/misclalawens2021-beep/Mon-Portfolio/tree/main">            
-                <img src="./assets/img/github-142-svgrepo-com.svg" style="width: 50px; height: 50px;" alt="GitHub">
+            <a href="https://github.com/misclalawens2021-beep">       
+                <i class="devicon-github-original" style="font-size: 50px;"></i>
+               
+                <!-- <img src="./assets/img/github-142-svgrepo-com.svg" style="width: 50px; height: 50px;" alt="GitHub"> -->
             </a>
+
+            <!-- <a href="./CV (1).pdf">
+                <i class="bi bi-file-earmark-person-fill"></i>
+            </a> -->
         </div>
 
-        <p>&copy; <span id="year"></span> Mon Portfolio. Tous droits réservés.</p>
+        <p>&copy; <span id="year"></span> Laguerre Mike-Scott-Lawens | Portfolio BTS SIO</p>
     </footer>
 
     <button id="backToTop" class="back-to-top">
-        <img src="./assets/img/arrow_upward_24dp_00F0FF_FILL0_wght400_GRAD0_opsz24.svg" alt="Top">
+        <i class="bi bi-chevron-double-up" style="font-size: 20px;"></i>
+        <!-- <img src="./assets/img/arrow_upward_24dp_00F0FF_FILL0_wght400_GRAD0_opsz24.svg" alt="Top"> -->
     </button>
 
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
