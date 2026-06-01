@@ -13,9 +13,9 @@ html {
     --primary-color: #1a1a2e;
     --secondary-color: #16213e;
     --accent-color: #0f3460;
-    --text-color: #eaeaea;
+    --text-color: #fff;
     --text-dark: #333;
-    --border-color: #e0e0e0;
+    --border-color: #6c8bc2;
 }
 
 /* body::before {
@@ -40,7 +40,7 @@ html {
 ========================================= */
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     color: var(--text-dark);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -87,7 +87,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 2500;
@@ -243,15 +243,15 @@ header {
 .lm {
     padding: 14px 40px;
     font-size: 1rem;
-    background-color: var(--accent-color);
-    color: white;
+    background-color: var(--border-color);
+    color: rgb(0, 0, 0) !important;
     border: none;
     cursor: pointer;
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(15, 52, 96, 0.3);
-    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(184, 191, 199, 0.3);
+    text-decoration: none !important;
     display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -259,8 +259,8 @@ header {
 }
 
 .lm:hover {
-    background-color: var(--primary-color);
-    box-shadow: 0 8px 25px rgba(15, 52, 96, 0.4);
+    background-color: var(--text-color);
+    box-shadow: 0 8px 25px rgba(210, 215, 221, 0.4);
     transform: translateY(-2px);
 }
 
@@ -295,13 +295,17 @@ section p {
     width: 60px;
     height: 4px;
     background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
-    margin: 20px auto 40px auto;
+    margin: 40px auto 40px auto;
     border-radius: 2px;
 }
 
 /* Description section */
 .description {
     text-align: center;
+}
+
+.description p {
+    padding-bottom: 20px;
 }
 
 /* Classes génériques */
@@ -393,6 +397,10 @@ footer {
         display: flex;
     }
 
+    .navbar {
+        display: none;
+    }
+
     header {
         padding: 20px 0;
     }
@@ -443,6 +451,38 @@ footer {
     align-items: center;
 }
 
+.content-section h3 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: #00F0FF;
+}
+
+.content-section h4 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: #000;
+}
+
+.content-section ul {
+    display: block; 
+    text-align: left;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding-left: 20px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.content-section li {
+    display: list-item;
+    margin-bottom: 8px;
+    color: #555;
+    justify-content: center; 
+    align-items: center; 
+}
+
 .contact-header h2 {
     display: flex;
     justify-content: center;
@@ -450,6 +490,7 @@ footer {
 }
 
 .product-card {
+    display: grid;
     background: #f8f9fa;
     padding: 30px;
     border-radius: 15px;
@@ -564,7 +605,7 @@ footer {
 
 /* Boutons de contact */
 .contact-container button {
-    background: var(--accent-color);
+    background: var(--border-color);
     color: white;
     padding: 14px 40px;
     border: none;
@@ -579,7 +620,7 @@ footer {
 }
 
 .contact-container button:hover {
-    background: var(--primary-color);
+    background: var(--text-color);
     box-shadow: 0 8px 25px rgba(15, 52, 96, 0.4);
     transform: translateY(-2px);
 }
@@ -1070,5 +1111,233 @@ footer {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    gap: 80px;
+    gap: 70px;
+}
+
+.tech-icon {
+    font-size: 100px; 
+    color: #333; 
+    transition: 0.3s;
+}
+
+.tech-icon:hover {
+    color: #00FACC;
+    transform: scale(1.2);
+}
+
+/* Conteneur flexible pour aligner les blocs de logos */
+.skills-wrapper {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Le petit bloc individuel pour chaque logo */
+.skill-item {
+    background: #ffffff; 
+    border: 1px solid var(--border-color);
+    border-radius: 8px; 
+    padding: 15px;
+    min-width: 120px;   /* Utiliser un min-width permet à la boite de s'élargir selon le texte */
+    /* width: 80px; */
+    height: auto;   /* Permet au texte long de passer à la ligne suivante */
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+/* Optionnel : Ajuster la taille du texte à l'intérieur des blocs de compétences */
+.skill-item h3 {
+    font-size: 0.9rem; 
+    color: #00F0FF;   /* Evite le cyan fluo si le fond est blanc */
+}
+
+/* Taille des icônes à l'intérieur des blocs */
+.skill-item i {
+    font-size: 60px !important; 
+}
+
+/* Effet de survol */
+.skill-item:hover {
+    transform: scale (1.1); 
+    border-color: var(--accent-color); 
+    box-shadow: 0 4px 10px rgba(15, 52, 96, 0.15);
+}
+
+/* Style pour l'étoile rouge */
+.required {
+    color: #ff0000;
+    margin-left: 3px;
+    font-weight: bold; 
+}
+
+/* Style pour les labels (pour qu'ils s'affichent bien au-dessus des champs */
+.form-group label {
+    display: block;
+    text-align: left; 
+    margin-bottom: 8px; 
+    font-weight: 600; 
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.loader {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.loading {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite
+    }
+    .loading::before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 5px solid #FFF;
+      animation: prixClipFix 2s linear infinite ;
+    }
+
+    @keyframes rotate {
+      100%   {transform: rotate(360deg)}
+    }
+
+    @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+        75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+        100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+    }
+    
+    /* Bouton Retour Accueil en haut à gauche */
+.btn-back-home {
+    position: absolute; /* Reste en haut absolu de la page. Si vous préférez qu'il suive le scroll, mettez 'fixed' */
+    top: 20px;
+    left: 20px;
+    z-index: 2000; /* Passe au-dessus du contenu */
+    background-color: var(--secondary-color); /* Utilise votre couleur #16213e */
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espace entre la flèche et le texte */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-back-home:hover {
+    background-color: var(--primary-color); /* Change de couleur au survol (#1a1a2e) */
+    transform: translateX(-3px); /* Petit effet dynamique vers la gauche au survol */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajustement pour les petits écrans (mobiles) */
+@media (max-width: 768px) {
+    .btn-back-home {
+        top: 15px;
+        left: 15px;
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Conteneur principal en Flexbox */
+.contact-flex-wrapper {
+    display: flex;
+    gap: 40px; /* Espace entre le formulaire et le bloc CV */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: stretch; /* Aligne les deux blocs à la même hauteur */
+}
+
+/* On s'assure que le formulaire prend une bonne partie de la largeur */
+.contact-container {
+    flex: 2; /* Prend plus de place (ex: 2/3) */
+}
+
+/* Style du bloc CV */
+.cv-container {
+    flex: 1; /* Prend le reste de la place (ex: 1/3) */
+    background-color: rgba(255, 255, 255, 0.05); /* Fond léger pour correspondre à un portfolio sombre */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cv-container h3 {
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cv-container p {
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* Style du bouton CV */
+.cv-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive : sur mobile, on empile les blocs */
+@media (max-width: 768px) {
+    .contact-flex-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
